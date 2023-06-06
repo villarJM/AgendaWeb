@@ -1,0 +1,82 @@
+#root {
+  max-width: 540px;
+  margin: 0 auto;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  background-color: #e5f0f7;
+  overflow: hidden;
+}
+.contenedorFormulario {
+  position: relative;
+  right: 400px;
+  top: 100px;
+  background-color: #fff;
+  border-radius: 2%;
+  padding: 35px;
+  box-shadow: 5px 5px 20px grey;
+}
+
+.lista {
+  position: relative;
+  left: 90px;
+  top: -370px;
+  height: 600px;
+  width: 800px;
+  background-color: #fff;
+  margin-bottom: 0%;
+}
+
+.Nav {
+  position: relative;
+  height: 600px;
+  width: 100px;
+  right: 400px;
+  margin: 0;
+  background-color: #fff;
+}
+
+.login {
+  position: relative;
+  top: 100px;
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 5px 5px 5px rgb(126, 126, 126);
+}
+
+.buttomLogin {
+  position: relative;
+  top: 35px;
+}
+.btnlogin {
+  position: relative;
+  width: 370px;
+  background-color: #ff9800;
+  border-radius: 30px;
+  font-weight: 600;
+}
+
+.btnlogin:hover{
+  background-color:#22ff34 !important;
+}
+.titulo {
+  color: #000000;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+#name, #pass {
+  border-radius: 20px;
+  background-color: #f2f7fa;
+  
+}
+label {
+  color: #fff;
+  font-weight: 500;
+}
+
+

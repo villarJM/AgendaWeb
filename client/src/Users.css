@@ -1,0 +1,55 @@
+.container-fluid {
+  position: relative;
+  width: 1230px;
+  right: 340px;
+  margin: 0;
+  padding: 0;
+}
+
+.panel {
+  position: relative;
+  bottom: 25px;
+  height: 600px;
+}
+.infouser {
+  background-color: #fff;
+  border-radius: 10px;
+}
+.col-md-4 {
+  position: relative;
+}
+.cardlogin {
+  position: relative;
+  height: 330px;
+  top: 90px;
+}
+
+.bi-arrow-left {
+  position: relative;
+  bottom: 40px;
+  right: 160px;
+}
+.listInformatioUser {
+  position: relative;
+  list-style: none;
+  top: 90px;
+  right: 16px;
+}
+.TitleUserInformation {
+  position: relative;
+  font-size: 20px;
+  font-weight: 700;
+  left: 30px;
+  bottom: 20px;
+}
+.IconUser ion-icon{
+  position: relative;
+  height: 60px;
+  width: 60px;
+  top: 70px;
+  left: -85px;
+}
+.groupbtnUser {
+  position: relative;
+  top: 160px;
+}

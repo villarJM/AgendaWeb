@@ -1,0 +1,74 @@
+.dashboardCard {
+  position: relative;
+  width: 2000px;
+  right: 290px;
+  transition: 0.5s;
+}
+
+.dashboardCard.activehome {
+  position: relative;
+  width: 2000px;
+  right: 220px;
+  transition: 0.5s;
+}
+
+.CardPatient {
+  background-color: #8d6ffb;
+  border-radius: 5px;
+}
+
+.CardUsers {
+  background-color: #Ff427e;
+  border-radius: 5px;
+}
+
+.IconPatient ion-icon {
+  position: relative;
+  height: 80px;
+  width: 80px;
+  color: #fff;
+}
+
+.IconUsers ion-icon {
+  position: relative;
+  height: 80px;
+  width: 80px;
+  color: #fff;
+}
+
+.TitlePatient,
+.TitleUsers {
+  position: relative;
+  font-size: 20px;
+  font-weight: 700;
+  bottom: 50px;
+  left: 20px;
+  color: #fff;
+}
+
+.CountPatient,
+.CountUsers {
+  position: relative;
+  font-weight: 700;
+  bottom: 40px;
+  left: 100px;
+  color: #fff;
+}
+
+.DashboardGraphic {
+  position: relative;
+  /* width: 2000px; */
+  height: 400px;
+  width: 1095px;
+  right: 290px;
+  margin: 10px;
+}
+
+.col-md-12 {
+  position: relative;
+  border: 1px solid #000;
+  background-color: #ffffff;
+  height: 400px;
+  width: 1095px;
+  border-radius: 5px;
+}

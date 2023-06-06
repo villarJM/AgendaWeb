@@ -1,0 +1,691 @@
+
+.option1 {
+  position: relative;
+  /* border: 1px solid #000; */
+  width: 1270px;
+  height: 600px;
+  bottom: 28px;
+  right: 357px;
+  transition: 0.5s;
+}
+.option1.active {
+  position: relative;
+  width: 1135px;
+  right: 217px;
+  transition: 0.5s;
+}
+
+.option1 .col-md-4{
+  position: relative;
+  height: 600px;
+  right: 60px;
+  transition: 0.5s;
+  overflow-y: scroll;
+}
+.col-md-4::-webkit-scrollbar {
+  width: 8px;     /* Tamaño del scroll en vertical */
+  height: 8px;    /* Tamaño del scroll en horizontal */
+  display: none;  /* Ocultar scroll */
+}
+.option1.active .col-md-4::-webkit-scrollbar {
+  width: 8px;     /* Tamaño del scroll en vertical */
+  height: 8px;    /* Tamaño del scroll en horizontal */
+  display: none;  /* Ocultar scroll */
+}
+.option1.active .col-md-4 {
+  position: relative;
+  padding: auto;
+  right: 10px;
+  transition: 0.5s;
+  /* border: 1px solid #000; */
+}
+
+.option1 .col-md-2 {
+  position: relative;
+  text-align: start;
+  width: 350px;
+  height: 600px;
+  right: 60px;
+  background-color: #fff;
+  transition: 0.5s;
+}
+
+.option1.active .col-md-2{
+  position: relative;
+  width: 300px;
+  right: 10px;
+  transition: 0.5s;
+}
+
+.col{
+  position: relative;
+  width: 400px;
+  right: 55px;
+  /* border: 1px solid #000; */
+  transition: 0.5s;
+}
+.option1.active .col{
+  position: relative;
+  width: 300px;
+  right: 1px;
+  /* border: 1px solid #000; */
+  transition: 0.5s;
+}
+.card {
+  background-color: #fff;
+  /* box-shadow: 3px 3px 2px #777676; */
+  margin: 10px;
+  border: none;
+  height: 130px;
+}
+/* Caledar */
+.calendar-container{
+  position: relative;
+  width: 500px;
+  background-color: #fff;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  transition: 0.5s;
+}
+.option1.active .calendar-container{
+  position: relative;
+  width: 430px;
+  background-color: #fff;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  transition: 0.5s;
+}
+.day {
+  height: 26px;
+  width: 26px;
+  padding: 0 10px;
+  line-height: 26px;
+  border: 2px solid transparent;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #000; 
+  
+}
+.colum {
+  position: relative;
+  height: 40px;
+  /* border: 1px solid #000; */
+}
+.months-table {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.dates-table {
+  height: 26px;
+  width: 26px;
+  padding: 0 30px;
+  line-height: 45px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #000;
+  transition: 0.5s;
+}
+.button {
+  position: relative;
+  top: 40px;
+}
+.active-date {
+  background: #cd4dcc;
+  color: #fff;
+  border-radius: 40px;
+}
+.events-container {
+  position: relative;
+  height: 319px;
+  width: 500px;
+  background-color: #ffffff;
+  top: 8px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.events-container::-webkit-scrollbar {
+  width: 8px;     /* Tamaño del scroll en vertical */
+  height: 8px;    /* Tamaño del scroll en horizontal */
+  display: none;
+}
+.option1.active .events-container {
+  position: relative;
+  height: 319px;
+  width: 430px;
+  background-color: #ffffff;
+  top: 8px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+/* task event for hour */
+.task {
+  position: relative;
+  margin: auto;
+  width: 500px;
+}
+.listahour {
+  list-style-type: none;
+
+}
+
+.hour {
+  position: relative;
+  background-color: #40c6ff;
+  color: #fff;
+  margin: 15px;
+  width: 80px;
+  right: 20px;
+  float: left;
+  border-radius: 20px;
+  list-style: none;
+  font-size: 13px;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.hour.active {
+  position: relative;
+  right: 50px;
+  transition: 0.5s;
+}
+
+
+/* Card */
+.iconprofile ion-icon {
+  position: relative;
+  color: #b9eaf9;
+  margin: 0;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  bottom: 38px;
+  right: 5px;
+}
+.iconarrow {
+  position: relative;
+  width: 50px;
+  top: 10px;
+  left: 280px;
+  font-size: 25px;
+}
+.title1 {
+  font-family: Helvetica;
+  position: relative;
+  font-weight: 700;
+  color: #2c373a;
+  cursor: pointer;
+  bottom: 71px;
+}
+.title2 {
+  position: relative;
+  color: #2c373a;
+  left: 50px;
+  cursor: pointer;
+  bottom: 69px;
+}
+.card-line {
+  position: relative;
+  bottom: 70px;
+}
+.cardhour {
+  position: relative;
+  bottom: 75px;
+}
+.table-date:hover {
+  background-color: #40c6ff;
+}
+.AppInformation {
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+.TitleAI {
+  font-weight: 700;
+}
+.listInfo {
+  position: relative;
+  right: 42px;
+  list-style: none;
+}
+.infocard ion-icon {
+  position: relative;
+  margin: 10px;
+  top: 10px;
+  color: #40c6ff;
+  
+}
+.PatienteInformation {
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+.TitlePI {
+  font-weight: 700;
+}
+.cardinformation {
+  border: 1px solid #a8a8a8;
+  height: auto;
+  right: 10px;
+}
+.iconinfo ion-icon{
+  position: relative;
+  color: #b9eaf9;
+  margin: 0;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  bottom: 38px;
+  right: 5px;
+}
+.titleinfo1 {
+  font-family: Helvetica;
+  position: relative;
+  font-weight: 700;
+  color: #2c373a;
+  cursor: pointer;
+  bottom: 71px;
+}
+.titleinfo2 {
+  position: relative;
+  color: #2c373a;
+  left: 50px;
+  cursor: pointer;
+  bottom: 69px;
+}
+.cardbody {
+  position: relative;
+  top: 30px;
+}
+.infospan {
+  position: relative;
+  color: #585858;
+  bottom: 50px;
+  font-size: small;
+}
+.Contact {
+  position: relative;
+  bottom: 30px;
+}
+.TitleC {
+  font-weight: 700;
+}
+
+.iconcontact {
+  position: relative;
+  left: 5px;
+  font-size: 13px;
+}
+.iconcontact ion-icon {
+  position: relative;
+  color: #b9eaf9;
+  font-size: 17px;
+  top: 3px;
+}
+/* media query */
+
+.squaredis, .squareocp, .squareatn {
+  position: relative;
+  height: 30px;
+  width: 80px;
+  display: inline;
+  margin: 10px;
+  color: #fff;
+  border-radius: 10px;
+}
+.squareocp {
+  background-color: #6c25be;
+}
+.squaredis {
+  background-color: #40c6ff;
+}
+.squareatn {
+  background-color: #05ec01;
+}
+
+/* Resposive Mobile */
+@media (max-width: 375px) {
+  .option1 {
+    position: relative;
+    border: 1px solid #000;
+    width: 375px;
+    height: 1000px;
+    top: 10px;
+    right: 32px;
+    transition: 0.5s;
+  }
+  .option1.active {
+    position: relative;
+    width: 1135px;
+    right: 217px;
+    transition: 0.5s;
+  }
+  
+  .option1 .col-md-4{
+    position: relative;
+    height: 150px;
+    left: 1px;
+    /* border: 1px solid #000; */
+    transition: 0.5s;
+    overflow-y: scroll;
+  }
+  .col-md-4::-webkit-scrollbar {
+    width: 8px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+    display: none;  /* Ocultar scroll */
+  }
+  .option1.active .col-md-4::-webkit-scrollbar {
+    width: 8px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+    display: none;  /* Ocultar scroll */
+  }
+  .option1.active .col-md-4 {
+    position: relative;
+    padding: auto;
+    right: 10px;
+    transition: 0.5s;
+    /* border: 1px solid #000; */
+  }
+  
+  .option1 .col-md-2 {
+    position: relative;
+    text-align: start;
+    width: 350px;
+    height: 480px;
+    left: 13px;
+    background-color: #fff;
+    transition: 0.5s;
+  }
+  
+  .option1.active .col-md-2{
+    position: relative;
+    width: 300px;
+    right: 10px;
+    transition: 0.5s;
+  }
+  
+  .col{
+    position: relative;
+    width: 100px;
+    left: 1px;
+    border: 1px solid #000;
+    transition: 0.5s;
+  }
+  .option1.active .col{
+    position: relative;
+    width: 300px;
+    right: 1px;
+    /* border: 1px solid #000; */
+    transition: 0.5s;
+  }
+  .card {
+    background-color: #fff;
+    /* box-shadow: 3px 3px 2px #777676; */
+    margin: 10px;
+    border: none;
+    height: 130px;
+  }
+  /* Caledar */
+  .calendar-container{
+    position: relative;
+    width: 360px;
+    background-color: #fff;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    transition: 0.5s;
+  }
+  .option1.active .calendar-container{
+    position: relative;
+    width: 430px;
+    background-color: #fff;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    transition: 0.5s;
+  }
+  .day {
+    height: 26px;
+    width: 26px;
+    padding: 0 10px;
+    line-height: 26px;
+    border: 2px solid transparent;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #000; 
+    
+  }
+  .colum {
+    position: relative;
+    height: 40px;
+    /* border: 1px solid #000; */
+  }
+  .months-table {
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  .dates-table {
+    height: 26px;
+    width: 26px;
+    padding: 0 30px;
+    line-height: 45px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #000;
+    transition: 0.5s;
+  }
+  .button {
+    position: relative;
+    top: 40px;
+  }
+  .active-date {
+    background: #cd4dcc;
+    color: #fff;
+    border-radius: 40px;
+  }
+  .events-container {
+    position: relative;
+    height: 319px;
+    width: 500px;
+    background-color: #ffffff;
+    top: 8px;
+    border-radius: 20px;
+    transition: 0.5s;
+  }
+  .events-container::-webkit-scrollbar {
+    width: 8px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+    display: none;
+  }
+  .option1.active .events-container {
+    position: relative;
+    height: 319px;
+    width: 430px;
+    background-color: #ffffff;
+    top: 8px;
+    border-radius: 20px;
+    transition: 0.5s;
+  }
+  
+  /* task event for hour */
+  .task {
+    position: relative;
+    margin: auto;
+    width: 500px;
+  }
+  .listahour {
+    list-style-type: none;
+  
+  }
+  
+  .hour {
+    position: relative;
+    background-color: #40c6ff;
+    color: #fff;
+    margin: 15px;
+    width: 80px;
+    right: 20px;
+    float: left;
+    border-radius: 20px;
+    list-style: none;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.5s;
+  }
+  .hour.active {
+    position: relative;
+    right: 50px;
+    transition: 0.5s;
+  }
+  
+  
+  /* Card */
+  .iconprofile ion-icon {
+    position: relative;
+    color: #b9eaf9;
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    bottom: 38px;
+    right: 5px;
+  }
+  .iconarrow {
+    position: relative;
+    width: 50px;
+    top: 10px;
+    left: 280px;
+    font-size: 25px;
+  }
+  .title1 {
+    font-family: Helvetica;
+    position: relative;
+    font-weight: 700;
+    color: #2c373a;
+    cursor: pointer;
+    bottom: 71px;
+  }
+  .title2 {
+    position: relative;
+    color: #2c373a;
+    left: 50px;
+    cursor: pointer;
+    bottom: 69px;
+  }
+  .card-line {
+    position: relative;
+    bottom: 70px;
+  }
+  .cardhour {
+    position: relative;
+    bottom: 75px;
+  }
+  .table-date:hover {
+    background-color: #40c6ff;
+  }
+  .AppInformation {
+    position: relative;
+    top: 10px;
+    left: 10px;
+  }
+  .TitleAI {
+    font-weight: 700;
+  }
+  .listInfo {
+    position: relative;
+    right: 42px;
+    list-style: none;
+  }
+  .infocard ion-icon {
+    position: relative;
+    margin: 10px;
+    top: 10px;
+    color: #40c6ff;
+    
+  }
+  .PatienteInformation {
+    position: relative;
+    top: 10px;
+    left: 10px;
+  }
+  .TitlePI {
+    font-weight: 700;
+  }
+  .cardinformation {
+    border: 1px solid #a8a8a8;
+    height: auto;
+    right: 10px;
+  }
+  .iconinfo ion-icon{
+    position: relative;
+    color: #b9eaf9;
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    bottom: 38px;
+    right: 5px;
+  }
+  .titleinfo1 {
+    font-family: Helvetica;
+    position: relative;
+    font-weight: 700;
+    color: #2c373a;
+    cursor: pointer;
+    bottom: 71px;
+  }
+  .titleinfo2 {
+    position: relative;
+    color: #2c373a;
+    left: 50px;
+    cursor: pointer;
+    bottom: 69px;
+  }
+  .cardbody {
+    position: relative;
+    top: 30px;
+  }
+  .infospan {
+    position: relative;
+    color: #585858;
+    bottom: 50px;
+    font-size: small;
+  }
+  .Contact {
+    position: relative;
+    bottom: 30px;
+  }
+  .TitleC {
+    font-weight: 700;
+  }
+  
+  .iconcontact {
+    position: relative;
+    left: 5px;
+    font-size: 13px;
+  }
+  .iconcontact ion-icon {
+    position: relative;
+    color: #b9eaf9;
+    font-size: 17px;
+    top: 3px;
+  }
+  /* media query */
+  
+  .squaredis, .squareocp, .squareatn {
+    position: relative;
+    height: 30px;
+    width: 80px;
+    display: inline;
+    margin: 10px;
+    color: #fff;
+    border-radius: 10px;
+  }
+  .squareocp {
+    background-color: #6c25be;
+  }
+  .squaredis {
+    background-color: #40c6ff;
+  }
+  .squareatn {
+    background-color: #05ec01;
+  }
+  
+}

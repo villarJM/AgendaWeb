@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: #e5f0f7;
+}
+
+.Navigation {
+  position: fixed;
+  inset: 0px;
+  background: #fff;
+  width: 80px;
+  /* left: 10px; */
+  border-left: 10px solid #ffffff;
+  /* border-radius: 50px; */
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.Navigation.active {
+  width: 220px;
+  /* border-radius: 20px; */
+}
+.toggle {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 50px;
+  height: 50px;
+  background: #0bb7ab;
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px rgba(0,0,0,15);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.toggle::before {
+  content: '';
+  position: absolute;
+  width: 26px;
+  height: 3px;
+  border-radius: 3px;
+  background: #000000;
+  transform: translateY(-5px);
+  transition: 1s;
+}
+.toggle::after {
+  content: '';
+  position: absolute;
+  width: 26px;
+  height: 3px;
+  border-radius: 3px;
+  background: #000000;
+  transform: translateY(5px);
+  transition: 1s;
+}
+.Navigation.active .toggle::before {
+  transform: translateY(0px) rotate(-405deg);
+}
+.Navigation.active .toggle::after {
+  transform: translateY(0px) rotate(225deg);
+}
+
+.Navigation ul {
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.Navigation ul li {
+  position: relative;
+  list-style: none;
+  right: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.Navigation ul li:hover {
+  background: #e5f0f7;
+  color: #222;
+  width: 180%;
+}
+.Navigation ul li .hover-active {
+  position: relative;
+  background: #e5f0f7;
+  color: #222;
+  width: 180%;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  transition: 0.5s;
+}
+.Navigation.active ul li .hover-active {
+  position: relative;
+  background: #e5f0f7;
+  color: #222;
+  width: 117%;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.Navigation.active ul li:hover:not(:first-child){
+  background: #e5f0f7;
+  color: #222;
+  width: 117%;
+} 
+
+.Navigation ul li:nth-child(1){
+  top: 20px;
+  margin-bottom: 40px;
+  background: none;
+}
+
+.Navigation ul li:not(:nth-last-child(-n + 2)):hover::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  right: 0px;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-bottom-right-radius: 20px;
+  box-shadow: 7.5px 7.5px 0 7.5px #e5f0f7;
+}
+
+.Navigation ul li .hover-active::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  right: 0px;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-bottom-right-radius: 20px;
+  box-shadow: 7.5px 7.5px 0 7.5px #e5f0f7;
+}
+
+.Navigation ul li:not(:nth-last-child(-n + 2)):hover::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  right: 0px;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-top-right-radius: 20px;
+  box-shadow: 7.5px -7.5px 0 7.5px #e5f0f7;
+}
+.Navigation ul li .hover-active::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  right: 0px;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-top-right-radius: 20px;
+  box-shadow: 7.5px -7.5px 0 7.5px #e5f0f7;
+}
+
+.Navigation ul li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  color: #000000;
+}
+.Navigation ul li:hover:not(:first-child) a {
+  color: #000000;
+}
+.Navigation ul li a .icon {
+  position: relative;
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  line-height: 70px;
+  text-align: center;
+  top: 5px;
+}
+.Navigation ul li a .icon ion-icon{
+  font-size: 1.75em;
+}
+.Navigation ul li a .title {
+  position: relative;
+  display: block;
+  padding: 0 10px;
+  height: 60px;
+  line-height: 60px;
+  text-align: start;
+  white-space: nowrap;
+}
+
+/* logout */
+.Navigation ul li:nth-last-child(-n + 2){
+  top: 40px;
+  /* margin-bottom: 40px; */
+  background: none;
+}
+
+.mode-line {
+  position: relative;
+  right: 27px;
+  top: 20px;
+  width: 50px;
+  border: 1px solid;
+  transition: 0.5s;
+}
+.Navigation.active .mode-line {
+  position: relative;
+  right: 27px;
+  top: 20px;
+  width: 190px;
+  border: 1px solid;
+  transition: 0.5s;
+}
+/* theme dark */
+body.themedark {
+  background-color: #1e1e1e;
+}
+.Navigation.themedark {
+  background-color: #3e3e42;
+}
+.card.themedark {
+  background-color: #3e3e42;
+}
+
+@media (max-width: 375px) {
+
+}
